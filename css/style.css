@@ -76,7 +76,12 @@ main {
   width: var(--playlist-width);
   background-color: black;
   height: 100%;
-  color: white;
+  color: #c7c7c7;
+}
+
+.playlist .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .row.navigation {
@@ -84,10 +89,13 @@ main {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .main-logo {
   padding: 5px;
+  color: white;
 }
 
 .hidden.logo {
@@ -186,6 +194,30 @@ footer {
   background-color: gray;
 }
 
+/* HOVER */
+
+li:hover,
+.new-playlist:hover,
+.navigation-list div:hover,
+.download-button:hover,
+a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.main-header button:hover {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 60px;
+}
+.main-header button:active {
+  transform: scale(0.8);
+}
+
 /* RESPONSIVE */
 
 /* PLAYLIST */
@@ -193,6 +225,11 @@ footer {
 @media screen and (min-width: 690px) {
   :root {
     --playlist-width: 200px;
+  }
+
+  .playlist .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .hidden.logo {
@@ -249,23 +286,23 @@ footer {
 
   .download-button {
     display: flex;
+    align-items: center;
+    border-bottom: 1px solid #86898c;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .download-img {
     margin: 0;
-    display: inline;
-  }
-
-  .donwload-button::after {
-    content: "";
-    border: 1px solid white;
-    display: block;
-    margin: 10px 0;
   }
 
   .profile-pic {
     display: flex;
     align-items: center;
+  }
+
+  .profile {
+    color: white;
   }
 
   /* MAIN PAGE */
