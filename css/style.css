@@ -53,10 +53,6 @@ ul {
   flex-wrap: wrap;
 }
 
-main {
-  flex-grow: 1;
-}
-
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -71,6 +67,7 @@ main {
   background-color: #141922;
   display: flex;
   overflow: auto;
+  height: calc(100% - var(--footer-height));
 }
 
 /* PLAYLIST */
@@ -86,6 +83,7 @@ main {
   height: 100%;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .main-logo {
@@ -127,6 +125,7 @@ main {
 .main-page {
   color: white;
   width: calc(100% - var(--playlist-width));
+  overflow: auto;
 }
 
 /* main header */
