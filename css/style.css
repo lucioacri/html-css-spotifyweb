@@ -38,7 +38,6 @@ ul {
 }
 
 .container {
-  max-width: 1100px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -51,6 +50,7 @@ ul {
   row-gap: 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
+  flex-wrap: wrap;
 }
 
 [class*="col"] {
@@ -94,7 +94,10 @@ main {
 
 main {
   background-color: #141922;
+  display: flex;
 }
+
+/* PLAYLIST */
 
 .playlist {
   width: var(--playlist-width);
@@ -130,6 +133,43 @@ main {
 .profile-pic {
   background-color: gray;
   border-radius: 50%;
+  width: 25px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+/* MAIN PAGE */
+
+.main-page {
+  overflow: auto;
+  color: white;
+  width: calc(100% - var(--playlist-width));
+}
+
+.main-header {
+  height: 60px;
+  background-color: #080b12;
+  width: 100%;
+}
+
+.menu {
+  padding: 1rem 2rem;
+  color: #86898c;
+}
+
+.menu .container .row {
+  justify-content: center;
+}
+
+.menu .container .row a {
+  padding-right: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+}
+
+.card {
+  padding: 1rem 0.5rem;
 }
 
 /* FOOTER */
