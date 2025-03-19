@@ -114,7 +114,7 @@ main {
   margin: 5px auto;
 }
 
-.profile-pic {
+.profile-logo {
   background-color: gray;
   border-radius: 50%;
   width: 25px;
@@ -186,6 +186,11 @@ footer {
     margin-bottom: 20px;
   }
 
+  .navigation-list div {
+    display: flex;
+    align-items: center;
+  }
+
   .main-logo {
     padding: 0 5px;
   }
@@ -199,11 +204,16 @@ footer {
     padding: 0 5px;
   }
 
+  .new-playlist {
+    display: flex;
+    align-items: center;
+  }
+
   .fa-solid.fa-plus {
     background-color: gray;
-    display: inline;
     font-size: 4rem;
   }
+
   ul {
     padding-top: 1rem;
   }
@@ -211,12 +221,12 @@ footer {
     line-height: 2rem;
   }
 
-  .download-img {
-    margin: 5px 0;
-    display: inline;
+  .download-button {
+    display: flex;
   }
 
-  .download {
+  .download-img {
+    margin: 0;
     display: inline;
   }
 
@@ -227,10 +237,8 @@ footer {
     margin: 10px 0;
   }
 
-  .profile-img {
-    display: inline;
-  }
-  .profile {
-    display: inline;
+  .profile-pic {
+    display: flex;
+    align-items: center;
   }
 }
