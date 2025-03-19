@@ -187,6 +187,14 @@ main {
   line-height: 2rem;
 }
 
+.card-img {
+  position: relative;
+}
+
+.hover-img {
+  display: none;
+}
+
 /* FOOTER */
 
 footer {
@@ -214,8 +222,22 @@ a:hover {
   cursor: pointer;
   padding: 10px 60px;
 }
+
 .main-header button:active {
   transform: scale(0.8);
+}
+
+.card-img:hover .hover-img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  background-color: rgb(0 0 0 / 67%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* RESPONSIVE */
