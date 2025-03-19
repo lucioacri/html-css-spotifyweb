@@ -210,4 +210,27 @@ footer {
   li {
     line-height: 2rem;
   }
+
+  .download-img {
+    margin: 5px 0;
+    display: inline;
+  }
+
+  .download {
+    display: inline;
+  }
+
+  .donwload-button::after {
+    content: "";
+    border: 1px solid white;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .profile-img {
+    display: inline;
+  }
+  .profile {
+    display: inline;
+  }
 }
