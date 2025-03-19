@@ -172,6 +172,12 @@ main {
 
 .card {
   padding: 1rem 0.5rem;
+  width: 250px;
+}
+
+.card-title {
+  text-align: center;
+  line-height: 2rem;
 }
 
 /* FOOTER */
@@ -264,4 +270,8 @@ footer {
   }
 
   /* MAIN PAGE */
+
+  .card {
+    width: 200px;
+  }
 }
