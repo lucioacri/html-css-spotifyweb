@@ -257,6 +257,33 @@ footer i {
 
 .player {
   flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-icons {
+  display: flex;
+}
+
+.player-icons i {
+  padding: 0px 10px;
+  font-size: 1.5rem;
+}
+
+.timebar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.timebar-bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  margin: 0 10px;
 }
 
 /* HOVER */
