@@ -82,6 +82,7 @@ main {
 .playlist .container {
   padding-left: 0;
   padding-right: 0;
+  overflow: auto;
 }
 
 .row.navigation {
@@ -103,6 +104,10 @@ main {
 
 .hidden {
   display: none;
+}
+
+.navigation-list > * {
+  border-left: 3px solid transparent;
 }
 
 .download-img {
@@ -217,12 +222,16 @@ footer i {
 }
 
 .actual > * {
-  padding-right: 5px;
+  padding-right: 10px;
+}
+
+.actual-name > * {
+  font-size: 0.6rem;
 }
 
 .actual-pic img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
 
 .actual-icons i {
@@ -265,11 +274,16 @@ footer i {
 
 .player-icons {
   display: flex;
+  align-items: center;
 }
 
 .player-icons i {
-  padding: 0px 10px;
+  padding: 0px 20px;
   font-size: 1.5rem;
+}
+
+.player-icons .fa-regular.fa-circle-play {
+  font-size: 2.5rem;
 }
 
 .timebar {
@@ -402,7 +416,7 @@ a:hover {
   }
 
   .current-playlist {
-    padding: 0 5px;
+    padding: 0px 8px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -448,7 +462,7 @@ a:hover {
   .profile-pic {
     align-items: center;
     justify-content: flex-start;
-    padding: 0px 10px;
+    padding: 5px 10px;
   }
 
   .profile {
