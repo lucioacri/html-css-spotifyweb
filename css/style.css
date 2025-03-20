@@ -200,6 +200,63 @@ main {
 footer {
   height: var(--footer-height);
   background-color: gray;
+  display: flex;
+  color: white;
+}
+
+footer i {
+  font-size: 0.8rem;
+}
+
+.actual {
+  display: flex;
+  width: 200px;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.actual > * {
+  padding-right: 5px;
+}
+
+.actual-pic img {
+  height: 50px;
+  width: 50px;
+}
+
+.actual-icons i {
+  display: block;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.volume > * {
+  padding-left: 5px;
+}
+
+.volume-bar {
+  display: flex;
+  align-items: center;
+}
+
+.volume-bar > * {
+  padding-right: 5px;
+}
+
+.volume-bar .bar {
+  height: 3px;
+  width: 50px;
+  background-color: white;
+}
+
+.player {
+  flex-grow: 1;
 }
 
 /* HOVER */
@@ -336,6 +393,13 @@ a:hover {
 
   .profile {
     color: white;
+  }
+
+  /* FOOTER */
+
+  .actual-icons {
+    display: flex;
+    gap: 5px;
   }
 }
 
