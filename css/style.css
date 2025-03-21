@@ -167,17 +167,33 @@ main {
 .menu {
   padding: 1rem 2rem;
   color: #86898c;
-}
-
-.menu .container .row {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.menu .container .row a {
+.menu a {
   padding-right: 30px;
   text-align: center;
   display: inline-block;
   font-size: 0.7rem;
+  line-height: 2.5rem;
+  text-wrap: nowrap;
+}
+
+.menu div {
+  position: relative;
+}
+
+.menu .green-line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: lime;
+  bottom: 0;
+  right: 50%;
+  border-radius: 30px;
+  display: none;
 }
 
 /* album */
@@ -315,6 +331,10 @@ footer i {
   font-size: 1rem;
 }
 
+.timebar-bar > .timer > .hidden-pointer > i {
+  transform: translateX(50%);
+}
+
 .hidden-pointer {
   display: none;
 }
@@ -342,6 +362,10 @@ a:hover {
 
 .main-header button:active {
   transform: scale(0.8);
+}
+
+.menu div:hover .green-line {
+  display: block;
 }
 
 .card-img:hover .hover-img {
