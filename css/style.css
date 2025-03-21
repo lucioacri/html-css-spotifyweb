@@ -173,7 +173,6 @@ main {
 }
 
 .menu a {
-  padding-right: 30px;
   text-align: center;
   display: inline-block;
   font-size: 0.7rem;
@@ -181,8 +180,9 @@ main {
   text-wrap: nowrap;
 }
 
-.menu div {
+.menu > div {
   position: relative;
+  margin: 0 20px;
 }
 
 .menu .green-line {
@@ -191,7 +191,8 @@ main {
   height: 3px;
   background-color: lime;
   bottom: 0;
-  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
   border-radius: 30px;
   display: none;
 }
@@ -210,6 +211,10 @@ main {
 
 .card-img {
   position: relative;
+}
+
+.card-img img {
+  display: block;
 }
 
 .popular img {
@@ -335,8 +340,8 @@ footer i {
   width: 30%;
   height: 3px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
 
 .hidden-pointer i {
@@ -344,6 +349,10 @@ footer i {
 }
 
 .timebar-bar > .timer > .hidden-pointer > i {
+  transform: translateX(50%);
+}
+
+.bar > .timer > .hidden-pointer > i {
   transform: translateX(50%);
 }
 
@@ -384,7 +393,7 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 4px;
+  bottom: 0;
   font-size: 2rem;
   background-color: rgb(0 0 0 / 67%);
   position: absolute;
@@ -404,11 +413,26 @@ a:hover {
 
 .timebar:hover .hidden-pointer {
   display: block;
+  position: absolute;
+  right: 0;
 }
 
 .volume-bar:hover .hidden-pointer {
   display: block;
-  width: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.menu div:hover ::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: lime;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 30px;
 }
 
 /* RESPONSIVE */
